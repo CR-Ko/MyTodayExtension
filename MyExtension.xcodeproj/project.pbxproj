@@ -15,6 +15,10 @@
 		CB92B9551BB2B4F100B9C1D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB92B9531BB2B4F100B9C1D6 /* LaunchScreen.storyboard */; };
 		CB92B9601BB2B4F100B9C1D6 /* MyExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92B95F1BB2B4F100B9C1D6 /* MyExtensionTests.m */; };
 		CB92B96B1BB2B4F100B9C1D6 /* MyExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92B96A1BB2B4F100B9C1D6 /* MyExtensionUITests.m */; };
+		CB92B97F1BB2B5FD00B9C1D6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB92B97E1BB2B5FD00B9C1D6 /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
+		CB92B9831BB2B5FD00B9C1D6 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB92B9821BB2B5FD00B9C1D6 /* TodayViewController.m */; };
+		CB92B9861BB2B5FD00B9C1D6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB92B9841BB2B5FD00B9C1D6 /* MainInterface.storyboard */; };
+		CB92B98A1BB2B5FD00B9C1D6 /* NumberWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB92B97C1BB2B5FD00B9C1D6 /* NumberWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +36,28 @@
 			remoteGlobalIDString = CB92B9411BB2B4F100B9C1D6;
 			remoteInfo = MyExtension;
 		};
+		CB92B9881BB2B5FD00B9C1D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB92B93A1BB2B4F100B9C1D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB92B97B1BB2B5FD00B9C1D6;
+			remoteInfo = NumberWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB92B98E1BB2B5FD00B9C1D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB92B98A1BB2B5FD00B9C1D6 /* NumberWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB92B9421BB2B4F100B9C1D6 /* MyExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +76,14 @@
 		CB92B9661BB2B4F100B9C1D6 /* MyExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB92B96A1BB2B4F100B9C1D6 /* MyExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyExtensionUITests.m; sourceTree = "<group>"; };
 		CB92B96C1BB2B4F100B9C1D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB92B97C1BB2B5FD00B9C1D6 /* NumberWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NumberWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB92B97E1BB2B5FD00B9C1D6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CB92B9811BB2B5FD00B9C1D6 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		CB92B9821BB2B5FD00B9C1D6 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		CB92B9851BB2B5FD00B9C1D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CB92B9871BB2B5FD00B9C1D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB92B98F1BB2BE7100B9C1D6 /* MyExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyExtension.entitlements; sourceTree = "<group>"; };
+		CB92B9901BB2BFA000B9C1D6 /* NumberWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NumberWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +108,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB92B9791BB2B5FD00B9C1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB92B97F1BB2B5FD00B9C1D6 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +125,8 @@
 				CB92B9441BB2B4F100B9C1D6 /* MyExtension */,
 				CB92B95E1BB2B4F100B9C1D6 /* MyExtensionTests */,
 				CB92B9691BB2B4F100B9C1D6 /* MyExtensionUITests */,
+				CB92B9801BB2B5FD00B9C1D6 /* NumberWidget */,
+				CB92B97D1BB2B5FD00B9C1D6 /* Frameworks */,
 				CB92B9431BB2B4F100B9C1D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +137,7 @@
 				CB92B9421BB2B4F100B9C1D6 /* MyExtension.app */,
 				CB92B95B1BB2B4F100B9C1D6 /* MyExtensionTests.xctest */,
 				CB92B9661BB2B4F100B9C1D6 /* MyExtensionUITests.xctest */,
+				CB92B97C1BB2B5FD00B9C1D6 /* NumberWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +145,7 @@
 		CB92B9441BB2B4F100B9C1D6 /* MyExtension */ = {
 			isa = PBXGroup;
 			children = (
+				CB92B98F1BB2BE7100B9C1D6 /* MyExtension.entitlements */,
 				CB92B9481BB2B4F100B9C1D6 /* AppDelegate.h */,
 				CB92B9491BB2B4F100B9C1D6 /* AppDelegate.m */,
 				CB92B94B1BB2B4F100B9C1D6 /* ViewController.h */,
@@ -140,6 +185,26 @@
 			path = MyExtensionUITests;
 			sourceTree = "<group>";
 		};
+		CB92B97D1BB2B5FD00B9C1D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB92B97E1BB2B5FD00B9C1D6 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB92B9801BB2B5FD00B9C1D6 /* NumberWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CB92B9901BB2BFA000B9C1D6 /* NumberWidget.entitlements */,
+				CB92B9811BB2B5FD00B9C1D6 /* TodayViewController.h */,
+				CB92B9821BB2B5FD00B9C1D6 /* TodayViewController.m */,
+				CB92B9841BB2B5FD00B9C1D6 /* MainInterface.storyboard */,
+				CB92B9871BB2B5FD00B9C1D6 /* Info.plist */,
+			);
+			path = NumberWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +215,12 @@
 				CB92B93E1BB2B4F100B9C1D6 /* Sources */,
 				CB92B93F1BB2B4F100B9C1D6 /* Frameworks */,
 				CB92B9401BB2B4F100B9C1D6 /* Resources */,
+				CB92B98E1BB2B5FD00B9C1D6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB92B9891BB2B5FD00B9C1D6 /* PBXTargetDependency */,
 			);
 			name = MyExtension;
 			productName = MyExtension;
@@ -196,6 +263,23 @@
 			productReference = CB92B9661BB2B4F100B9C1D6 /* MyExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CB92B97B1BB2B5FD00B9C1D6 /* NumberWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB92B98B1BB2B5FD00B9C1D6 /* Build configuration list for PBXNativeTarget "NumberWidget" */;
+			buildPhases = (
+				CB92B9781BB2B5FD00B9C1D6 /* Sources */,
+				CB92B9791BB2B5FD00B9C1D6 /* Frameworks */,
+				CB92B97A1BB2B5FD00B9C1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberWidget;
+			productName = NumberWidget;
+			productReference = CB92B97C1BB2B5FD00B9C1D6 /* NumberWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +291,12 @@
 				TargetAttributes = {
 					CB92B9411BB2B4F100B9C1D6 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4HU3YN3TPE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CB92B95A1BB2B4F100B9C1D6 = {
 						CreatedOnToolsVersion = 7.0;
@@ -215,6 +305,15 @@
 					CB92B9651BB2B4F100B9C1D6 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = CB92B9411BB2B4F100B9C1D6;
+					};
+					CB92B97B1BB2B5FD00B9C1D6 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 4HU3YN3TPE;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -234,6 +333,7 @@
 				CB92B9411BB2B4F100B9C1D6 /* MyExtension */,
 				CB92B95A1BB2B4F100B9C1D6 /* MyExtensionTests */,
 				CB92B9651BB2B4F100B9C1D6 /* MyExtensionUITests */,
+				CB92B97B1BB2B5FD00B9C1D6 /* NumberWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +360,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB92B97A1BB2B5FD00B9C1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB92B9861BB2B5FD00B9C1D6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +400,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB92B9781BB2B5FD00B9C1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB92B9831BB2B5FD00B9C1D6 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +420,11 @@
 			isa = PBXTargetDependency;
 			target = CB92B9411BB2B4F100B9C1D6 /* MyExtension */;
 			targetProxy = CB92B9671BB2B4F100B9C1D6 /* PBXContainerItemProxy */;
+		};
+		CB92B9891BB2B5FD00B9C1D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB92B97B1BB2B5FD00B9C1D6 /* NumberWidget */;
+			targetProxy = CB92B9881BB2B5FD00B9C1D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,6 +443,14 @@
 				CB92B9541BB2B4F100B9C1D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB92B9841BB2B5FD00B9C1D6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB92B9851BB2B5FD00B9C1D6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,10 +542,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ko.MyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +557,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MyExtension/MyExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ko.MyExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -479,6 +616,36 @@
 			};
 			name = Release;
 		};
+		CB92B98C1BB2B5FD00B9C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NumberWidget/NumberWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NumberWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ko.MyExtension.NumberWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB92B98D1BB2B5FD00B9C1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = NumberWidget/NumberWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NumberWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ko.MyExtension.NumberWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -512,6 +679,14 @@
 			buildConfigurations = (
 				CB92B9761BB2B4F100B9C1D6 /* Debug */,
 				CB92B9771BB2B4F100B9C1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB92B98B1BB2B5FD00B9C1D6 /* Build configuration list for PBXNativeTarget "NumberWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB92B98C1BB2B5FD00B9C1D6 /* Debug */,
+				CB92B98D1BB2B5FD00B9C1D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
