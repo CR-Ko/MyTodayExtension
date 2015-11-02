@@ -27,9 +27,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     self.preferredContentSize = CGSizeMake(320, 50);
+     self.preferredContentSize = CGSizeMake(320, 320);
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"Press Me" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    [button sizeToFit];
+    button.center = CGPointMake(320/2, 60);
+    
+    [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.view addSubview:button];
+    
     [self updateNumberLabelText];
 }
+
+- (void)buttonPressed:(UIButton *)button {
+    NSLog(@"Button Pressed");
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
